@@ -5,8 +5,8 @@ import MapComponent from "./components/Map";
 
 function App() {
   const [selectedLocation, setSelectedLocation] = useState({
-    lat: 28.7041,
-    lng: 77.1025,
+    lat: 17.38405000,
+    lng: 78.45636000,
   });
   return (
     <div style={{ height: "100vh", width: "100%" }}>
@@ -17,3 +17,6 @@ function App() {
 }
 
 export default App;
+
+
+// Location HYDERABAD    Latitude  17.38405000    Longitude  78.45636000  
