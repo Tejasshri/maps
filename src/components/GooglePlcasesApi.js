@@ -21,15 +21,12 @@ const SearchLocationInput = ({ setSelectedLocation }) => {
 
   const handlePlaceSelect = () => {
     const addressObject = autoComplete.getPlace();
-
     const query = addressObject.formatted_address;
     setQuery(query);
-
     const latLng = {
       lat: addressObject?.geometry?.location?.lat(),
       lng: addressObject?.geometry?.location?.lng(),
     };
-
     setSelectedLocation(latLng);
   };
 
